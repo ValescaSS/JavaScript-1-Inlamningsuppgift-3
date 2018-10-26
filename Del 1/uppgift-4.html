@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uppgift 4</title>
+</head>
+<body>
+    <script>
+
+        /* Programmet läser in en sfärs radie från en dialogruta 
+        och beräknar volym och arean. Visar resultaten i en dialogruta. */
+
+        let radie = prompt("Skriv sfärens radie");
+        
+        //Används egenskapen PI i Math objektet 
+        const PI = Math.PI;
+
+        //Används metoden pow() i Math objektet för att beräkna arean och volym. */
+        let volym = (4 * PI * Math.pow(radie, 3))/3;
+        let area = 4 * PI * Math.pow(radie, 2);
+
+        // Skriver sfärens area och volym i en dialogruta. 
+        alert("Sfärens volym är: " + volym.toFixed(5) + "\n" 
+              + "Sfärens area är: " + area.toFixed(5));
+
+    </script>
+</body>
+</html>

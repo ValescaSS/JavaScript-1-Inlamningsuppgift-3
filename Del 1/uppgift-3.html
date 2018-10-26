@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uppgift 3</title>
+</head>
+<body>
+    <script>
+
+        /* Programmet läser in en cirkelns radie från en dialogruta 
+        och beräknar omkretsen och arean. Visar resultaten i en dialogruta. */
+
+        let radie = prompt("Skriv cirkelns radie");
+        
+        // Funktionen omkretsenArea accepterar en parameter och returnerar en array.
+        function omkretsArea(radie){
+            /* Används metoden pow() och egenskapen PI i Math objektet 
+               för att beräkna arean och omkretsens längd. */
+            const PI = Math.PI;
+            let omkrets = 2 * PI * radie;
+            let area = PI * Math.pow(radie, 2);
+            let dimentions = [omkrets, area];
+            return dimentions;
+        }
+        
+        /* Skriver Cirkelns area och omkrets i en dialogruta 
+           genom att anropa funktionen omkretsArea. */
+        alert("Cirkelns omkrets är: " + omkretsArea(radie)[0].toFixed(5) + "\n" 
+              + "Cirkelns area är: " + omkretsArea(radie)[1].toFixed(5));
+
+    </script>
+</body>
+</html>
