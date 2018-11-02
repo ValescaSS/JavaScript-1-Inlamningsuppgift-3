@@ -10,7 +10,7 @@ function factorial(nummer){
     /* if-else satsen beräknar fakulteten om parameter "nummer" är ett heltal mellan 1 och 1000 
     och tilldelar resultaten till variabeln "meddelandet". 
     Annars tilldelar ett felmeddelande till variabeln "meddelandet"*/ 
-    if((nummer >= 1) && (nummer <= 1000) && (nummer%1 === 0) && (!isNaN(nummer))){
+    if((nummer >= 1) && (nummer <= 1000) && (Number.isInteger(+nummer)) && (!isNaN(nummer))){
         
         // while-loop som beräknar fakulteten av "nummer".
         while(x <= nummer){
