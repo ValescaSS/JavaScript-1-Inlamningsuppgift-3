@@ -29,12 +29,11 @@ function factorial(nummer){
         
         meddelandet = "<h1>Fel inmatning!</h1>";
 
-    } else {
-            
-        meddelandet = "<h1>" + nummer + " är inte ett heltal mellan 1 och 1000</h1>";
+    } else {  
 
+        meddelandet = "<h1>" + nummer + " är inte ett heltal mellan 1 och 1000</h1>";
+        
     }
-    
     
     // Skriver ut ett meddelande på websidan. 
     document.write(meddelandet);
