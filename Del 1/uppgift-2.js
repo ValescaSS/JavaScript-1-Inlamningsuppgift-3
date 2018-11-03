@@ -2,6 +2,7 @@
    längd i en rätvinklig triangel och skriver ut resultaten i terminalen. */
 
 function hypotenusasLangd(katet1, katet2){
+    
     let hypotenusa = Math.sqrt(Math.pow(katet1, 2) + Math.pow(katet2, 2));
     console.log(hypotenusa);
 }
